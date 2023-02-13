@@ -43,7 +43,6 @@ namespace TechAssignmentWeatherForecast2
                 Console.ReadKey();
             }
         }
-
         
         public  void CallWatherForecastApi(string city, decimal lat, decimal lng)
         {
