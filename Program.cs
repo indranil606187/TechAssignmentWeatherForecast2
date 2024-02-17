@@ -22,9 +22,8 @@ namespace TechAssignmentWeatherForecast2
                 var cityDetail = from c in cityDetails
                                  where c.city.ToUpper() == userInputCity.ToUpper()
                                  select c;
-                // var city = cityDetails.Where(c => c.city.ToUpper() == userInputCity.ToUpper()).FirstOrDefault();
                 var cityDetailForApi = cityDetail.FirstOrDefault();
-
+                //checking null
                 if (cityDetailForApi != null)
                 {
 
@@ -44,7 +43,6 @@ namespace TechAssignmentWeatherForecast2
                 Console.ReadKey();
             }
         }
-
         
         public  void CallWatherForecastApi(string city, decimal lat, decimal lng)
         {
