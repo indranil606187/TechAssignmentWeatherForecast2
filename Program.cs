@@ -23,7 +23,7 @@ namespace TechAssignmentWeatherForecast2
                                  where c.city.ToUpper() == userInputCity.ToUpper()
                                  select c;
                 var cityDetailForApi = cityDetail.FirstOrDefault();
-
+                //checking null
                 if (cityDetailForApi != null)
                 {
 
